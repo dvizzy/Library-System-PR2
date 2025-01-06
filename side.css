@@ -1,0 +1,233 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+/* Headbar Styles */
+.headbar {
+  background-color: #16193B;
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.headbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.headbar .logo a {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.headbar .nav-menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.headbar .nav-menu ul li {
+  margin-left: 30px;
+}
+
+.headbar .nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.headbar .nav-menu ul li a:hover {
+  color: #3498DB;
+  text-decoration: underline;
+}
+
+/* Content Styles */
+.content {
+  margin-top: 80px; /* Push content down below headbar */
+  padding: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: #16193B;
+  color: white;
+  position: fixed;
+  top: 60px; /* Push down to avoid overlapping with headbar */
+  left: 0;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 999;
+  box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-header img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.sidebar-nav {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nav-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.nav-item {
+  margin-bottom: 15px;
+}
+
+.nav-item a {
+  color: white;
+  font-size: 16px;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.nav-item a:hover {
+  background-color: #007bff;
+  padding-left: 30px;
+}
+
+/* Submenu Styling */
+.submenu {
+  display: none;
+  padding-left: 20px;
+  margin-top: 10px;
+  background-color: #1e2434;
+  border-radius: 5px;
+}
+
+.submenu a {
+  color: #ddd;
+  padding: 12px 20px;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.submenu a:hover {
+  background-color: #444;
+}
+
+.show {
+  display: block;
+}
+
+.nav-item.active a {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #444;
+}
+
+.sidebar-footer button {
+  background-color: transparent;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.sidebar-footer button:hover {
+  color: white;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 220px;
+  }
+
+  .sidebar-header img {
+    max-height: 30px;
+  }
+
+  .headbar .container {
+    padding: 0 10px;
+  }
+
+  .headbar .logo a {
+    font-size: 22px;
+  }
+}
+
+/* Style the toggle button */
+#toggle-btn {
+  background-color: white; /* Black background */
+  color: white;            /* White text */
+  border: 1px solid #ffffff;  /* Slightly lighter border */
+  padding: 10px 20px;      /* Some padding */
+  font-size: 16px;         /* Font size */
+  cursor: pointer;        /* Pointer cursor on hover */
+  border-radius: 5px;      /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+#toggle-btn:hover {
+  background-color: #555;  /* Lighter black on hover */
+  transform: scale(1.05);   /* Slight scale effect for hover */
+}
+
+/* Optional: Style for a 'collapsed' sidebar button */
+.sidebar.collapsed #toggle-btn {
+  background-color: #222;  /* Darker black when sidebar is collapsed */
+}
