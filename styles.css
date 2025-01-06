@@ -1,0 +1,167 @@
+/*dahsboardadmin*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+}
+
+.navbar {
+    background-color: #acc7a9;
+    color: #05004b;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.navbar-logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #05004b;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+}
+
+
+.illustration-container {
+    background-color: #002253;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:60px;
+    width:45%;
+    opacity:90%;
+}
+
+.illustration-container img {
+    max-width: 50%;
+    margin-bottom: 30px;
+}
+
+.illustration-text {
+    font-size: 1.7rem;
+    font-weight: italic small-caps bold 30px/30px Georgia, serif;
+    color:white;
+    text-align: center;
+
+}
+
+.illustration-subtext {
+    font-size: 1rem;
+    color: #7ECEFD;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.login-form-container {
+    background-color: #ffffff;
+    padding: 60px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top:20px;
+    margin-bottom:20px;
+    opacity:90%;
+    width:45%;
+}
+
+.brand-name {
+    font-family: 'Cursive', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #002253;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color:#002253;
+}
+
+.forgot-password {
+    color: #7e5d5d;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+button {
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+
+.custom-input {
+    border: none; /* Remove the default border */
+    border-bottom: 2px solid #000; /* Add a solid line at the bottom */
+    border-radius: 0; /* Remove border-radius to have sharp corners */
+    padding: 10px 5px; /* Adjust padding as needed */
+    outline: none; /* Remove the outline on focus */
+    background-color: transparent; /* Set background to transparent */
+}
+
+.custom-input:focus {
+    border-bottom-color: #007bff; /* Change the line color on focus */
+    box-shadow: none; /* Remove any default shadow on focus */
+}
+
+.custom-input::placeholder {
+    color: #999; /* Customize the placeholder text color */
+}
+
+.custom-input:focus::placeholder {
+    color: transparent; /* Optionally hide placeholder on focus */
+}
+@media (max-width: 991px) {
+    .container-fluid {
+        flex-direction: column; /* Stack the containers vertically on smaller screens */
+    }
+
+    .illustration-container, .login-form-container {
+        width: 100%; /* Full width on smaller screens */
+        max-width: none; /* Remove max-width constraints */
+    }
+}
