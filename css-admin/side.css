@@ -63,7 +63,7 @@ body {
 
 /* Content Styles */
 .content {
-  margin-top: 80px; /* Push content down below headbar */
+  margin-top: 80px;
   padding: 20px;
   font-size: 18px;
   color: #333;
@@ -86,7 +86,7 @@ body {
   background-color: #16193B;
   color: white;
   position: fixed;
-  top: 60px; /* Push down to avoid overlapping with headbar */
+  top: 60px; 
   left: 0;
   padding: 20px;
   overflow-y: auto;
@@ -212,22 +212,21 @@ body {
 
 /* Style the toggle button */
 #toggle-btn {
-  background-color: white; /* Black background */
-  color: white;            /* White text */
-  border: 1px solid #ffffff;  /* Slightly lighter border */
-  padding: 10px 20px;      /* Some padding */
-  font-size: 16px;         /* Font size */
-  cursor: pointer;        /* Pointer cursor on hover */
-  border-radius: 5px;      /* Rounded corners */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  background-color: white;
+  color: white;           
+  border: 1px solid #ffffff;  
+  padding: 10px 20px;     
+  font-size: 16px; 
+  cursor: pointer;      
+  border-radius: 5px;     
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #toggle-btn:hover {
-  background-color: #555;  /* Lighter black on hover */
-  transform: scale(1.05);   /* Slight scale effect for hover */
+  background-color: #555; 
+  transform: scale(1.05);   
 }
 
-/* Optional: Style for a 'collapsed' sidebar button */
 .sidebar.collapsed #toggle-btn {
-  background-color: #222;  /* Darker black when sidebar is collapsed */
+  background-color: #222;  
 }
